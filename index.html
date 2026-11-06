@@ -6,14 +6,12 @@
 <title>Morad</title>
 <meta name="description" content="Morad. הדלת שלנו פתוחה לאנשים עם היכולות שלכם. דברו איתנו בערוץ הטלגרם הרשמי שלנו, @morad_telegram. קודם כול, הגנו על עצמכם וודאו שהדף הזה באמת שלנו.">
 <meta name="theme-color" content="#020408">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FMNHNGNYC9"></script>
+<!-- Google Tag Manager -->
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-PXQB9QS2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
-  gtag('config', 'G-FMNHNGNYC9');
 
   // Count the clicks that leave the page: every Telegram link and the official-site link.
   document.addEventListener('click', function (e) {
@@ -436,7 +434,7 @@ main, .site-footer { position: relative; z-index: 1; }
   box-shadow: inset 0 1px 0 var(--glass-edge-top), inset 0 0 0 1px var(--line), 0 30px 80px -30px rgba(0, 0, 0, 0.8);
 }
 .check::before {
-  content: ""; position: absolute; z-index: -1; inset: -40% -20%;
+  content: ""; position: absolute; z-index: -1; inset: -40% -20%; pointer-events: none; /* the glow reaches over the button above on phones; it must not catch taps */
   background: radial-gradient(closest-side at 50% 40%, rgba(31, 99, 201, 0.35), transparent 70%);
 }
 .check .bar {
